@@ -948,39 +948,31 @@ server <- function(input, output,session) {
   source("Code/Descripcion Datos/ReporteFaltantes.R",local = TRUE)
   
   # GRAFICO DE SERIES ====================================================
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/Vazoes.R",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/Clima.R",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/Indices.R",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/Contaminacion.R",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/ManchasSolares.R",local = TRUE)
+  source("Code/Descripcion Datos/Grafico Series/SeriexNombre.R",local = TRUE)
   
   # ANALISIS DE SERIES ===================================================
   # >> Vazoes  --------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Vazoes/",local = TRUE)
-  source("Code/Descripcion Datos/Analisis Series/Vazoes/",local = TRUE)
-  
+  source("Code/Descripcion Datos/Analisis Series/Vazoes.R",local = TRUE)
+
   # >> Clima  ---------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Clima/",local = TRUE)
-  source("Code/Descripcion Datos/Analisis Series/Clima/",local = TRUE)
-  
+  source("Code/Descripcion Datos/Analisis Series/Clima.R",local = TRUE)
+
   # >> Contaminacion  -------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Contaminacion/",local = TRUE)
-  source("Code/Descripcion Datos/Analisis Series/Contaminacion/",local = TRUE)
-  
+  source("Code/Descripcion Datos/Analisis Series/Contaminacion.R",local = TRUE)
+
   # >> Indice  --------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Indice/",local = TRUE)
-  source("Code/Descripcion Datos/Analisis Series/Indice/",local = TRUE)
-  
+  source("Code/Descripcion Datos/Analisis Series/Indices.R",local = TRUE)
+
   # >> Manchas Solares  -----------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Manchas Solares/",local = TRUE)
-  source("Code/Descripcion Datos/Analisis Series/Manchas Solares/",local = TRUE)
-  
-  # >> Detalles STL-Loes ----------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/STL",local = TRUE)
-  
+  source("Code/Descripcion Datos/Analisis Series/ManchasSolares.R",local = TRUE)
+
   # MULTIVARIANTE   ======================================================
-  source("Code/Descripcion Datos/Cluster.R",local = TRUE)
+  source("Code/Descripcion Datos/Multivariante/TSCluster.R",local = TRUE)
 }
 
 
