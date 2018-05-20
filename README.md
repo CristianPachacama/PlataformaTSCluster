@@ -1,4 +1,5 @@
-# Proyecto de Investigación
+
+# <img src="www/epn_logo2.png" alt="EPN" style="width:70px"> Proyecto de Investigación
 
 #### Forecast and Impact of extreme low levels of streamflow in hydropower plants.
 
@@ -17,5 +18,8 @@ There are evidences that exist a causal relationship between the streamflow and 
 
 This application was designed for the analysis of time series associated with flow, climate, and contamination data (with more than 30 years of daily information). The STL-Loes decomposition of the time series is included, as well as Extreme Value Analysis and Cluster Analysis of time series.
 
+<img src="images/shiny1.png" style="width:600px">
+<img src="images/shiny2.png" style="width:600px">
+<img src="images/shiny3.png" style="width:600px">
 
 
