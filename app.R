@@ -48,13 +48,11 @@ library(cluster)
 #>> Carga de Datos
 load('Data/datos_interfaz.RData')
 load('Data/Vazoes_Cluster.RData')
-# PARAMETROS INICIALES -----------------------------------------
-source("Code/ParametrosIniciales.R",local = TRUE)
 
 # ========================================================================
 # !!!!!!!!!!!!!!!!!!!!!!    USER INTERFACE   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # ========================================================================
-ui <- navbarPage(title = "Modelo Predictivo DGIP",
+ui <- navbarPage(title = "Proyecto Semilla",
                  header = tags$h2("Header-Plataforma",tags$head(tags$link(rel='shortcut icon', 
                                                                           href='epn.ico', 
                                                                           type='image/x-icon'))),
@@ -948,31 +946,31 @@ server <- function(input, output,session) {
   source("Code/Descripcion Datos/ReporteFaltantes.R",local = TRUE)
   
   # GRAFICO DE SERIES ====================================================
-  source("Code/Descripcion Datos/Grafico Series/Vazoes.R",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/Clima.R",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/Indices.R",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/Contaminacion.R",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/ManchasSolares.R",local = TRUE)
-  source("Code/Descripcion Datos/Grafico Series/SeriexNombre.R",local = TRUE)
+  source("Code/Grafico Series/Vazoes.R",local = TRUE)
+  source("Code/Grafico Series/Clima.R",local = TRUE)
+  source("Code/Grafico Series/Indices.R",local = TRUE)
+  source("Code/Grafico Series/Contaminacion.R",local = TRUE)
+  source("Code/Grafico Series/ManchasSolares.R",local = TRUE)
+  source("Code/Grafico Series/SeriexNombre.R",local = TRUE)
   
   # ANALISIS DE SERIES ===================================================
   # >> Vazoes  --------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Vazoes.R",local = TRUE)
+  source("Code/Analisis Series/Vazoes.R",local = TRUE)
 
   # >> Clima  ---------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Clima.R",local = TRUE)
+  source("Code/Analisis Series/Clima.R",local = TRUE)
 
   # >> Contaminacion  -------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Contaminacion.R",local = TRUE)
+  source("Code/Analisis Series/Contaminacion.R",local = TRUE)
 
   # >> Indice  --------------------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/Indices.R",local = TRUE)
+  source("Code/Analisis Series/Indices.R",local = TRUE)
 
   # >> Manchas Solares  -----------------------------------------
-  source("Code/Descripcion Datos/Analisis Series/ManchasSolares.R",local = TRUE)
+  source("Code/Analisis Series/ManchasSolares.R",local = TRUE)
 
   # MULTIVARIANTE   ======================================================
-  source("Code/Descripcion Datos/Multivariante/TSCluster.R",local = TRUE)
+  source("Code/Multivariante/TSCluster.R",local = TRUE)
 }
 
 
