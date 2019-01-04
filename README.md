@@ -1,5 +1,5 @@
 
-# <img src="www/epn_logo2.png" alt="EPN" style="width:70px"> Proyecto de Investigación
+<img src="www/epn_logo2.png" alt="EPN" style="width:70px"> Proyecto de Investigación
 
 #### Forecast and Impact of extreme low levels of streamflow in hydropower plants.
 
